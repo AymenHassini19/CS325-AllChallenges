@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:gravity="center_horizontal"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose your Fighter"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_marginTop="15dp"
+        />
+    <ImageView
+        android:id="@+id/selected_fighter"
+        android:layout_width="300dp"
+        android:layout_height="400dp"
+        android:src="@drawable/jin_kazama"
+        android:layout_marginTop="10dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        >
+        <ImageView
+            android:id="@+id/fighter_1"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/jin_kazama_selector"
+            android:layout_margin="20dp"
+            />
+        <ImageView
+            android:id="@+id/fighter_2"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/marshall_law_selector"
+            android:layout_margin="20dp"/>
+    </LinearLayout>
+
+</LinearLayout>
